@@ -7,7 +7,7 @@ filetype off
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
- " let Vundle manage Vundle, required
+" let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 " Enable tmux navigation
 Plugin 'christoomey/vim-tmux-navigator'
@@ -20,7 +20,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'python-mode/python-mode'
 " Blame
 Plugin 'zivyangll/git-blame.vim'
-nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+
  " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required 
@@ -39,7 +39,7 @@ hi VertSplit ctermfg=darkgrey
 hi ColorColumn ctermbg=darkgrey
 hi Folded ctermbg=darkgrey
 
-"""OTHER"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""OTHER""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -115,4 +115,6 @@ map <C-l> <C-W>l
 
 " Open NERDTree with ,ne
 let mapleader = ","
-nmap <leader>ne :NERDTree<cr>
+nnoremap <leader>ne :NERDTree<CR>
+" Check git-blame with ,s
+nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
