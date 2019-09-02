@@ -30,3 +30,5 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\u@\h \[\033[01;32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+LS_COLORS=$LS_COLORS:'di=0;36' ; export LS_COLORS
