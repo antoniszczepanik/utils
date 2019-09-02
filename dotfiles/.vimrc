@@ -20,6 +20,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'python-mode/python-mode'
 " Blame
 Plugin 'zivyangll/git-blame.vim'
+" Color
+Plugin 'morhetz/gruvbox'
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required
