@@ -4,7 +4,7 @@
 set nocompatible 
 filetype off
 
-" set the runtime path to include Vundle and initialize
+" Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
@@ -118,5 +118,6 @@ map <C-l> <C-W>l
 " Open NERDTree with ,ne
 let mapleader = ","
 nnoremap <leader>ne :NERDTree<CR>
+
 " Check git-blame with ,s
-nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+nnoremap <Leader>b :<C-u>call gitblame#echo()<CR>

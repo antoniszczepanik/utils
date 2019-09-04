@@ -25,10 +25,10 @@ alias ls='ls -1 --color=auto'
 # Show git branch name, color included
 force_color_prompt=yes
 color_prompt=yes
-
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
+# Custom PS1
 export PS1="\u@\h \[\033[01;32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # Set vim as default editior
