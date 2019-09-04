@@ -1,2 +1,2 @@
 # utils
-Custom tools, usually to speed up common tasks 
+My personal custom tools. Ubuntu provisioning with the setup of my liking, convinient scripts, and work related helpers.
