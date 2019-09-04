@@ -3,7 +3,7 @@
 apt update
 apt install git
 apt install tmux
-apt install vim
+apt install vim-gtk3
 
 setxkbmap -option caps:swapescape
 
