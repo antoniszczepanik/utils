@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
 apt update
-apt install git
-apt install tmux
-apt install vim-gtk3
+apt install -y git tmux vim-gtk3
 
 setxkbmap -option caps:swapescape
 
