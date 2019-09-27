@@ -117,7 +117,10 @@ map <C-l> <C-W>l
 
 " Open NERDTree with ,ne
 let mapleader = ","
-nnoremap <leader>ne :NERDTree<CR>
+nnoremap <leader>ne :NERDTreeToggle<CR>
+
+" Open CtrlP with ,f
+nnoremap <leader>f :CtrlP<CR>
 
 " Check git-blame with ,s
-nnoremap <Leader>b :<C-u>call gitblame#echo()<CR>
+nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
