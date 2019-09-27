@@ -17,6 +17,7 @@ set -o vi
 
 # Cool aliases
 alias c='clear'
+alias e='exit'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
 alias loadbash='source ~/.bashrc'
