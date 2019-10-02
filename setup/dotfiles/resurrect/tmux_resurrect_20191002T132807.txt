@@ -1,0 +1,12 @@
+pane	0	0	:vim	1	:*	0	:/home/antoni/repos/airflow	1	vim	:vim
+pane	0	0	:vim	1	:*	1	:/home/antoni/repos/airflow	0	bash	:
+pane	0	0	:vim	1	:*	2	:/home/antoni/repos/airflow	0	bash	:
+pane	0	1	:vim	0	:	0	:/home/antoni/repos/manager	1	vim	:vim
+pane	0	1	:vim	0	:	1	:/home/antoni/repos/manager	0	bash	:
+pane	0	1	:vim	0	:	2	:/home/antoni/repos/manager	0	bash	:
+pane	0	2	:bash	0	:-	0	:/home/antoni	0	bash	:
+pane	0	2	:bash	0	:-	1	:/home/antoni	1	bash	:
+window	0	0	1	:*	3df2,276x75,0,0{138x75,0,0,0,137x75,139,0[137x37,139,0,1,137x37,139,38,2]}
+window	0	1	0	:	bdff,276x75,0,0{138x75,0,0,3,137x75,139,0[137x37,139,0,4,137x37,139,38,5]}
+window	0	2	0	:-	879a,276x75,0,0[276x37,0,0,6,276x37,0,38,7]
+state	0	
