@@ -126,3 +126,7 @@ nnoremap <leader>f :CtrlP<CR>
 
 " Check git-blame with ,s
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+
+"""OTHER"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufWritePost * GitGutter
+
