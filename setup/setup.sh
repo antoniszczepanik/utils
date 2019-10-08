@@ -13,5 +13,3 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ./configure_git.sh
 
 echo "Remember to run 'CTRL+B I' to install tmux plugins and to run :PluginInstall in vim"
-
-
