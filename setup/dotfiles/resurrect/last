@@ -1,1 +1,16 @@
-tmux_resurrect_20191002T133144.txt
+pane	0	0	:airflow	1	:*	0	:/home/antoni	1	bash	:
+pane	2	0	:general	1	:*	0	:/home/antoni	1	bash	:
+pane	work	0	:airflow	0	:-	0	:/home/antoni/repos/airflow	1	bash	:
+pane	work	0	:airflow	0	:-	1	:/home/antoni/repos/airflow	0	bash	:
+pane	work	0	:airflow	0	:-	2	:/home/antoni/repos/airflow	0	bash	:
+pane	work	1	:manager	1	:*	0	:/home/antoni/repos/manager	1	bash	:
+pane	work	1	:manager	1	:*	1	:/home/antoni/repos/manager	0	bash	:
+pane	work	1	:manager	1	:*	2	:/home/antoni/repos/manager	0	bash	:
+pane	work	2	:general	0	:	0	:/home/antoni	0	bash	:
+pane	work	2	:general	0	:	1	:/home/antoni	1	bash	:
+window	0	0	1	:*	c95e,276x75,0,0,1
+window	2	0	1	:*	c95f,276x75,0,0,2
+window	work	0	0	:-	bdff,276x75,0,0{138x75,0,0,3,137x75,139,0[137x37,139,0,4,137x37,139,38,5]}
+window	work	1	1	:*	1659,276x75,0,0{156x75,0,0,6,119x75,157,0[119x37,157,0,7,119x37,157,38,8]}
+window	work	2	0	:	4415,276x75,0,0[276x37,0,0,9,276x37,0,38,10]
+state	work	0
