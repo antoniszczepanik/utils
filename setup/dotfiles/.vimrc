@@ -76,6 +76,8 @@ set showcmd		               " display what you are writing as a command
 set colorcolumn=80           " show 80th column
 set hlsearch                 " highlight string matched in search
 
+"""Pymode SETTINGS"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:pymode_lint = 0
 
 """INDENTATION"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
