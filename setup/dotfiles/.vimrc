@@ -76,8 +76,12 @@ set showcmd		               " display what you are writing as a command
 set colorcolumn=80           " show 80th column
 set hlsearch                 " highlight string matched in search
 
-"""Pymode SETTINGS"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""PLUGIN SETTINGS"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Pymode
 let g:pymode_lint = 0
+"git-gutter
+set updatetime=75
+
 
 """INDENTATION"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
