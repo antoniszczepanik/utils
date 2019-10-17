@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# do not proceed in case of failure
+set -e
+
 apt update
 apt install -y git tmux vim-gtk3 htop
 
