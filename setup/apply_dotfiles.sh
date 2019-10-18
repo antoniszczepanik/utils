@@ -6,3 +6,4 @@ cp dotfiles/.tmux.conf ~/.tmux.conf
 sudo cp -r dotfiles/resurrect ~/.tmux/resurrect
 mkdir -p ~/.config/htop/htoprc
 sudo cp dotfiles/htoprc ~/.config/htop/htoprc
+dconf load /org/gnome/terminal/ < dotfiles/gnome_terminal_settings.txt

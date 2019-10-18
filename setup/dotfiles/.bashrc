@@ -39,3 +39,4 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 LS_COLORS=$LS_COLORS:'di=0;36' ; export LS_COLORS
+export PATH=$HOME/bin:$PATH
