@@ -1,0 +1,20 @@
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(40,40,40)'
+foreground-color='#ebebdbdbb2b2'
+use-theme-colors=false
+font='Monospace 9'
+palette=['rgb(0,0,0)', 'rgb(170,0,0)', 'rgb(69,193,69)', 'rgb(170,85,0)', 'rgb(118,118,188)', 'rgb(176,98,176)', 'rgb(0,170,170)', 'rgb(170,170,170)', 'rgb(50,44,44)', 'rgb(255,85,85)', 'rgb(32,121,32)', 'rgb(255,255,85)', 'rgb(85,85,255)', 'rgb(255,85,255)', 'rgb(85,255,255)', 'rgb(255,255,255)']
+use-system-font=false
+
+[legacy/profiles:/:bd95ea97-b27f-4de3-98a8-c535a4b34306]
+background-color='rgb(40,40,40)'
+foreground-color='rgb(235,219,178)'
+use-theme-colors=false
+font='Monospace 9'
+palette=['rgb(0,0,0)', 'rgb(204,36,29)', 'rgb(50,164,50)', 'rgb(215,153,33)', 'rgb(69,133,136)', 'rgb(177,98,134)', 'rgb(104,157,106)', 'rgb(168,153,132)', 'rgb(50,44,44)', 'rgb(255,85,85)', 'rgb(32,121,32)', 'rgb(255,255,85)', 'rgb(85,85,255)', 'rgb(255,85,255)', 'rgb(85,255,255)', 'rgb(255,255,255)']
+visible-name='Default'
+use-system-font=false
+
+[legacy/profiles:]
+default='bd95ea97-b27f-4de3-98a8-c535a4b34306'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'bd95ea97-b27f-4de3-98a8-c535a4b34306']
