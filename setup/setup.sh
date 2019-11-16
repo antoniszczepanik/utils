@@ -3,10 +3,10 @@
 # do not proceed in case of failure
 set -e
 
-apt update
-apt install -y git tmux vim-gtk3 htop
+sudo apt update
+sudo apt install -y git tmux vim-gtk3 htop curl
 
-apt-get install xclip
+sudo apt-get install xclip
 
 setxkbmap -option caps:swapescape
 
