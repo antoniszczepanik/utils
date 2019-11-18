@@ -26,6 +26,8 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install -y nodejs
 # jupyterlab vim mode
 pip3 install juptyerlab
+pip3 install -r basic_requirements.txt
+
 jupyter labextension install jupyterlab_vim
 
 sudo apt-get install xclip
