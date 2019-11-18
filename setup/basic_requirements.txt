@@ -75,6 +75,7 @@ prometheus-client==0.7.1
 prompt-toolkit==2.0.10
 protobuf==3.6.1
 ptyprocess==0.6.0
+pyarrow==0.15.1
 pyasn1==0.4.2
 pycairo==1.16.2
 pycrypto==2.6.1
