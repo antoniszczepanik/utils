@@ -34,9 +34,13 @@ pip3 install -r basic_requirements.txt
 jupyter labextension install jupyterlab_vim
 
 # silent output in case of errors
+if [ ! -d "~/.vim/bundle" ] ; then
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim > /dev/null 2>&1
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm > /dev/null 2>&1
+if [ ! -d "~/.tmux/plugins/tpm" ] ; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
 
 
 echo "Remember to run 'CTRL+B I' to install tmux plugins!"
