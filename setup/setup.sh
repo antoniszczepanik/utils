@@ -3,6 +3,10 @@
 # do not proceed in case of failure
 set -e
 
+sudo apt-get install xclip
+
+setxkbmap -option caps:swapescape
+
 sudo apt update
 sudo apt install -y \
 	git \
@@ -24,18 +28,15 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 # nodejs for vim mode
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install -y nodejs
-# jupyterlab vim mode
-pip3 install juptyerlab
+
 pip3 install -r basic_requirements.txt
 
 jupyter labextension install jupyterlab_vim
 
-sudo apt-get install xclip
+# silent output in case of errors
 
-setxkbmap -option caps:swapescape
-
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim > /dev/null 2>&1
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm > /dev/null 2>&1
 
 
 echo "Remember to run 'CTRL+B I' to install tmux plugins!"
