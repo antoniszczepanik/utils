@@ -17,9 +17,10 @@ for path in  $PATHS; do
   before="s3://$path"
   after=${before//$BEFORE/$AFTER}
   if [ -z "$4" ]; then
-    aws s3 mv $before $after --dryrun
+    echo "aws s3 cp $before $after --dryrun"
+    aws s3 cp $before $after --dryrun
   elif [ "$4" == '--force' ]; then
-    aws s3 mv $before $after
+    aws s3 cp $before $after
   fi
 done
 

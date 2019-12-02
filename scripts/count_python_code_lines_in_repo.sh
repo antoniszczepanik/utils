@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-git ls-files | grep "\.py$" | xargs wc -l 
+cd $1 && git ls-files | grep "\.py$" | xargs wc -l && cd -
