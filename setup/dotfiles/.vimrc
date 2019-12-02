@@ -53,15 +53,17 @@ if has('mouse')
   set mouse=a
 endif
 
-set backupdir=/tmp//
-set directory=/tmp//
-set undodir=/tmp//
-
+"""MAKE LIFE EASIER""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set history=100		           " keep 50 lines of command line history
 set incsearch		             " do incremental searching
 set ignorecase               " search is case insensitive
 set nu rnu                   " set numbers and relative line numbers
+
+" move '~' and '.swp' files
+" ~/.vim/backup/ dir needs to be created earlier!
+set backupdir=~/.vim/backup//,.
+set directory=~/.vim/backup//,.
 
 " at least let yourself know what mode you're in
 set showmode
