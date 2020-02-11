@@ -24,6 +24,7 @@ alias bashrc='vim ~/.bashrc'
 alias tmuxconf='vim ~/.tmux.conf'
 alias loadbash='source ~/.bashrc'
 alias gitconfig='vim ~/.gitconfig'
+alias todo="~/utils/scripts/todo.sh"
 
 # Show git branch name, color included
 force_color_prompt=yes
