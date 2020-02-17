@@ -16,6 +16,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ctrlpvim/ctrlp.vim'
 " Add file browsing bar
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 " Pymode 
 Plugin 'python-mode/python-mode'
 " Blame
