@@ -23,4 +23,7 @@ if ! cat $TODO_FILE | grep -q "$DATE_TODAY"; then
 	echo >> $TODO_FILE
 fi
 
-vim + $TODO_FILE && cd $TODO && git add -A && git commit -m 'update' && git push
+vim + $TODO_FILE && cd $TODO && git add -A && git commit -m 'update' > /dev/null
+
+# if commit made succesfully push in background
+[ $? -eq 0 ] && git push </dev/null &>/dev/null &
