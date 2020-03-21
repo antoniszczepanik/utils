@@ -2,4 +2,5 @@ To setup linux machine with my preffered software (dotfiles, vim plugins, cmdlin
 ```sh
 make setup
 ```
-Tested on ubuntu
+Tested on Ubuntu 18.04.3 LTS
+
