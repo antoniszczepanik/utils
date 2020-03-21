@@ -2,4 +2,4 @@ To setup linux machine with my preffered software (dotfiles, vim plugins, cmdlin
 ```sh
 make setup
 ```
-:) 
+Tested on ubuntu
