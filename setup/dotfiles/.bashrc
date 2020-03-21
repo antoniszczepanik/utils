@@ -42,4 +42,3 @@ export LOCAL_DEVELOPMENT=true
 
 LS_COLORS=$LS_COLORS:'di=0;36' ; export LS_COLORS
 export PATH=$HOME/bin:$PATH
-export LOCAL_DEVELOPMENT=false
