@@ -127,6 +127,8 @@ map <C-l> <C-W>l
 " Open NERDTree with ,ne
 let mapleader = ","
 nnoremap <leader>ne :NERDTreeToggle<CR>
+" Show hidden files in nerdtree by default
+let NERDTreeShowHidden=1
 
 " Open CtrlP with ,f
 nnoremap <leader>f :CtrlP<CR>
