@@ -15,18 +15,21 @@ customer_slug = args.customer_slug
 force = args.force
 user = args.user
 
-cmd_1 = f'aws s3 sync s3://greensteam-data-prod/customer_data/ s3://greensteam-data-dev/{user}/customer_data/ --exclude="*" --include="*{vessel_slug}.parquet"'
-cmd_2 = f'aws s3 cp s3://greensteam-data-prod/final/{vessel_slug}.parquet s3://greensteam-data-dev/{user}/final/'
+cmd_1 = f'aws s3 sync s3://greensteam-data-prod/customer_data/ s3://greensteam-data-dev/{user}/customer_data/ --exclude="*" --include="*{vessel_slug}*"'
+cmd_2 = f'aws s3 sync s3://greensteam-data-prod/final/ s3://greensteam-data-dev/{user}/final/ --exclude="*" --include="*{vessel_slug}*"'
 cmd_3 = f'aws s3 sync s3://greensteam-prod/data-import/{customer_slug}/advanced/ s3://greensteam-dev/data-import/{customer_slug}/advanced/'
-cmd_4 = f'aws s3 sync s3://greensteam-data-prod/fouling_analysis/{vessel_slug}/ s3://greensteam-data-dev/{user}/fouling_analysis/{vessel_slug}/'
+cmd_4 = f'aws s3 sync s3://greensteam-data-prod/fouling_analysis/ s3://greensteam-data-dev/{user}/fouling_analysis/ --exclude="*" --include="*{vessel_slug}*"'
+cmd_5 = f'aws s3 sync s3://greensteam-data-prod/unification/ s3://greensteam-data-dev/{user}/unification/ --exclude="*" --include="*{vessel_slug}*"'
 
 if force:
     os.system(cmd_1)
     os.system(cmd_2)
     os.system(cmd_3)
     os.system(cmd_4)
+    os.system(cmd_5)
 else:
     os.system(cmd_1 + ' --dryrun')
     os.system(cmd_2 + ' --dryrun')
     os.system(cmd_3 + ' --dryrun')
     os.system(cmd_4 + ' --dryrun')
+    os.system(cmd_5 + ' --dryrun')
