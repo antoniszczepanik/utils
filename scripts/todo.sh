@@ -4,6 +4,10 @@ DATE_TODAY=$(date +'%A, %d %B %Y')
 TODO="$HOME/todo"
 TODO_FILE="$TODO/todo.txt"
 
+if [ "$1" == "priv" ]; then
+  TODO_FILE="$TODO/todo_priv.txt"
+fi
+
 mkdir -p $TODO
 
 if ! ls -a $TODO | grep -q .git; then
