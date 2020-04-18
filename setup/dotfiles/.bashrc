@@ -1,3 +1,8 @@
+# Start shell in tmux by default (if not already in tmux)
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 # History convieniences
 HISTCONTROL=ignoreboth
 shopt -s histappend
@@ -15,16 +20,18 @@ force_color_prompt=yes
 set editing-mode vi
 set -o vi
 
-# Cool aliases
+# Aliases
 alias c='clear'
 alias e='exit'
 alias ls='ls -1 --color=auto'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
+alias i3rc='vim ~/.config/i3/config'
 alias tmuxconf='vim ~/.tmux.conf'
 alias loadbash='source ~/.bashrc'
 alias gitconfig='vim ~/.gitconfig'
 alias todo="~/utils/scripts/todo.sh"
+
 
 # Show git branch name, color included
 force_color_prompt=yes

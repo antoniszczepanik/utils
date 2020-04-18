@@ -9,9 +9,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-" Enable tmux navigation
-Plugin 'christoomey/vim-tmux-navigator'
-" Plugin 'python-mode/python-mode'
 " File finder
 Plugin 'ctrlpvim/ctrlp.vim'
 " Add file browsing bar
@@ -25,6 +22,10 @@ Plugin 'zivyangll/git-blame.vim'
 Plugin 'morhetz/gruvbox'
 " +- Git sings
 Plugin 'airblade/vim-gitgutter'
+" Surround :)
+Plugin 'tpope/vim-surround'
+" Repeating plugins commands
+Plugin 'tpope/vim-repeat'
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -60,6 +61,7 @@ set history=100		           " keep 50 lines of command line history
 set incsearch		             " do incremental searching
 set ignorecase               " search is case insensitive
 set nu rnu                   " set numbers and relative line numbers
+set clipboard=unnamedplus    " make system clipboard a default
 
 " move '~' and '.swp' files
 " ~/.vim/backup/ dir needs to be created earlier!
@@ -82,7 +84,6 @@ set hlsearch                 " highlight string matched in search
 let g:pymode_lint = 0
 "git-gutter
 set updatetime=75
-
 
 """INDENTATION"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -112,7 +113,7 @@ autocmd Filetype text setlocal
   \ expandtab
   \ tabstop=2
   \ shiftwidth=2
-
+ 	        
 autocmd Filetype python setlocal
   \ expandtab
   \ tabstop=4
@@ -127,6 +128,12 @@ autocmd Filetype python setlocal
 nnoremap ; :
 nnoremap : ;
 
+" Vim-like splits navigation
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
 " Disable arrow movement, resize splits instead.
 nnoremap <Up>    :resize +2<CR>
 nnoremap <Down>  :resize -2<CR>
@@ -134,10 +141,10 @@ nnoremap <Left>  :vertical resize +2<CR>
 nnoremap <Right> :vertical resize -2<CR>
 
 " Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+"map <C-j> <C-W>j
+"map <C-k> <C-W>k
+"map <C-h> <C-W>h
+"map <C-l> <C-W>l
 
 " Open NERDTree with ,ne
 let mapleader = ","
