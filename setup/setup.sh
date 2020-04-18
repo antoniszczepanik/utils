@@ -6,8 +6,6 @@ set -e
 sudo apt-get install xclip
 
 setxkbmap -option caps:swapescape
-# remap mouse 8 to nothing (not going back with mouse8)
-xmodmap -e "pointer = 1 2 3 4 5 6 7 10 9 8"
 
 sudo apt update
 sudo apt install -y \

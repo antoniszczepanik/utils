@@ -3,13 +3,9 @@
 cp dotfiles/.vimrc ~/.vimrc
 cp dotfiles/.bashrc ~/.bashrc
 cp dotfiles/.tmux.conf ~/.tmux.conf
-
-mkdir -p ~/.tmux/resurrect
-sudo cp -r dotfiles/resurrect ~/.tmux/resurrect
-
-mkdir -p ~/.config/htop/htoprc
-sudo cp dotfiles/htoprc ~/.config/htop/htoprc
+cp dotfiles/config ~/.config/i3/config
 
 dconf load /org/gnome/terminal/ < dotfiles/gnome_terminal_settings.txt
+
 # make sure bashrc is sourced in tmux env
 echo ". ~/.bashrc" >> ~/.bash_profile
