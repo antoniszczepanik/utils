@@ -3,12 +3,12 @@
 # do not proceed in case of failure
 set -e
 
-sudo apt-get install xclip
+apt-get install xclip
 
 setxkbmap -option caps:swapescape
 
-sudo apt update
-sudo apt install -y \
+apt update
+apt install -y \
 	git \
 	tmux \
 	vim-gtk3 \
@@ -18,17 +18,17 @@ sudo apt install -y \
 	python3-pip \
   i3wm
 
-sudo usermod -aG docker $USER
+usermod -aG docker $USER
 # install compose
-sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 
 # install lazydocker
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 
 # nodejs for vim mode
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt install -y nodejs
+curl -sL https://deb.nodesource.com/setup_12.x | -E bash -
+apt install -y nodejs
 
 pip3 install -r basic_requirements.txt
 
