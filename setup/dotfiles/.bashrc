@@ -42,6 +42,10 @@ parse_git_branch() {
 # Custom PS1
 export PS1="\u@\h \[\033[01;32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+      . /usr/share/bash-completion/bash_completion
+
 # Set vim as default editior
 export VISUAL=vim
 export EDITOR="$VISUAL"

@@ -24,9 +24,11 @@ Plugin 'morhetz/gruvbox'
 Plugin 'airblade/vim-gitgutter'
 " Surround :)
 Plugin 'tpope/vim-surround'
+" Tmux navigation
+Plugin 'christoomey/vim-tmux-navigator'
 " Repeating plugins commands
 Plugin 'tpope/vim-repeat'
-
+  
  " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required 
@@ -133,6 +135,7 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
 
 " Disable arrow movement, resize splits instead.
 nnoremap <Up>    :resize +2<CR>
