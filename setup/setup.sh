@@ -3,7 +3,7 @@
 # do not proceed in case of failure
 set -e
 
-apt-get install xclip i3wm -y
+apt-get install xclip -y
 #setxkbmap -option caps:swapescape
 
 apt update
