@@ -15,7 +15,8 @@ sudo apt install -y \
 	htop \
 	curl \
 	docker.io \
-	python3-pip
+	python3-pip \
+  i3wm
 
 sudo usermod -aG docker $USER
 # install compose

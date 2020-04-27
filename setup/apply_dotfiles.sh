@@ -4,6 +4,7 @@ cp dotfiles/.vimrc ~/.vimrc
 cp dotfiles/.bashrc ~/.bashrc
 cp dotfiles/.tmux.conf ~/.tmux.conf
 cp dotfiles/config ~/.config/i3/config
+cp dotfiles/.inputrc ~/.inputrc
 
 dconf load /org/gnome/terminal/ < dotfiles/gnome_terminal_settings.txt
 
