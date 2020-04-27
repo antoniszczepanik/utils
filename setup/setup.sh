@@ -4,12 +4,7 @@
 set -e
 
 apt-get install xclip -y
-
-# configure keyboard
-dpkg-reconfigure keyboard-configuration
-# restart keyboard setup
-/etc/init.d/keyboard-setup restart
-setxkbmap -option caps:swapescape
+#setxkbmap -option caps:swapescape
 
 apt update
 apt install -y \
