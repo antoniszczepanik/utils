@@ -3,7 +3,7 @@
 # do not proceed in case of failure
 set -e
 
-apt-get install xclip -y
+apt-get install xclip i3wm -y
 #setxkbmap -option caps:swapescape
 
 apt update
@@ -15,7 +15,6 @@ apt install -y \
 	curl \
 	docker.io \
 	python3-pip \
-  i3wm
 
 usermod -aG docker $USER
 # install compose
