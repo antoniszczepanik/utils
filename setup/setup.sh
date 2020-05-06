@@ -8,13 +8,15 @@ apt-get install xclip -y
 
 apt update
 apt install -y \
-	git \
 	tmux \
 	vim-gtk3 \
 	htop \
 	curl \
 	docker.io \
 	python3-pip \
+  # screenshots
+  imagemagick-6.q16 \
+  ctags
 
 usermod -aG docker $USER
 # install compose
@@ -25,14 +27,13 @@ chmod +x /usr/local/bin/docker-compose
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 
 # nodejs for vim mode
-curl -sL https://deb.nodesource.com/setup_12.x | -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 apt install -y nodejs
 
-pip3 install -r basic_requirements.txt
+#pip3 install -r basic_requirements.txt
 
 jupyter labextension install jupyterlab_vim
 
-# silent output in case of errors
 if [ ! -d "~/.vim/bundle" ] ; then
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
@@ -40,6 +41,5 @@ fi
 if [ ! -d "~/.tmux/plugins/tpm" ] ; then
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
-
 
 echo "Remember to run 'CTRL+B I' to install tmux plugins!"
