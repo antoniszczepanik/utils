@@ -24,7 +24,7 @@ s3_cmd_2 = f'aws s3 sync s3://greensteam-data-prod/final/ s3://greensteam-data-d
 s3_cmd_3 = f'aws s3 sync s3://greensteam-prod/data-import/{customer_slug}/advanced/ s3://greensteam-dev/data-import/{customer_slug}/advanced/'
 s3_cmd_4 = f'aws s3 sync s3://greensteam-data-prod/fouling_analysis/ s3://greensteam-data-dev/{user}/fouling_analysis/ --exclude="*" --include="*{vessel_slug}*"'
 s3_cmd_5 = f'aws s3 sync s3://greensteam-data-prod/unification/ s3://greensteam-data-dev/{user}/unification/ --exclude="*" --include="*{vessel_slug}*"'
-s3_cmd_6 = f'aws s3 sync s3://greensteam-models-prod/fouling_analysis/{vessel_slug}/ s3://greensteam-models-dev/antoni.szczepanik/fouling_analysis/{vessel_slug}/'
+s3_cmd_6 = f'aws s3 sync s3://greensteam-models-prod/fouling_analysis/{vessel_slug}/ s3://greensteam-models-dev/{user}/fouling_analysis/{vessel_slug}/'
 
 minio_cmd_1 = f'aws s3 sync s3://greensteam-data-prod/customer_data/ ~/data/greensteam-data/customer_data/ --exclude="*" --include="*{vessel_slug}*"'
 minio_cmd_2 = f'aws s3 sync s3://greensteam-data-prod/final/ ~/data/greensteam-data/final/ --exclude="*" --include="*{vessel_slug}*"'
