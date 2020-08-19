@@ -11,7 +11,7 @@ fi
 mkdir -p $TODO
 
 if ! ls -a $TODO | grep -q .git; then
-	git clone https://github.com/kabuboy/todo.git $TODO
+	git clone https://github.com/antoniszczepanik/todo.git $TODO
 fi
 
 # If there's not todays date in a file try pulling
