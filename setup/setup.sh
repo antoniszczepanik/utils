@@ -2,9 +2,7 @@
 
 # do not proceed in case of failure
 set -e
-
 apt-get install xclip -y
-#setxkbmap -option caps:swapescape
 
 apt update
 apt install -y \
@@ -14,9 +12,7 @@ apt install -y \
 	curl \
 	docker.io \
 	python3-pip \
-  # screenshots
-  imagemagick-6.q16 \
-  ctags
+  zsh
 
 usermod -aG docker $USER
 # install compose
@@ -26,19 +22,13 @@ chmod +x /usr/local/bin/docker-compose
 # install lazydocker
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 
-# nodejs for vim mode
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-apt install -y nodejs
-
-#pip3 install -r basic_requirements.txt
-
-jupyter labextension install jupyterlab_vim
-
 if [ ! -d "~/.vim/bundle" ] ; then
+  mkdir -p ~/.vim
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
 if [ ! -d "~/.tmux/plugins/tpm" ] ; then
+  mkdir -p ~/.tmux
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
