@@ -32,6 +32,8 @@ alias tmuxconf='vim ~/.tmux.conf'
 alias loadbash='source ~/.bashrc'
 alias gitconfig='vim ~/.gitconfig'
 alias todo="~/utils/scripts/todo.sh"
+alias note="~/utils/scripts/todo.sh note"
+alias priv="~/utils/scripts/todo.sh priv"
 
 plugins=(
   git
