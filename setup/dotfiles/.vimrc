@@ -106,6 +106,11 @@ autocmd Filetype javascript setlocal
   \ tabstop=2
   \ shiftwidth=2
 
+autocmd Filetype css setlocal
+  \ expandtab
+  \ tabstop=2
+  \ shiftwidth=2
+
 autocmd Filetype sh setlocal
   \ expandtab
   \ tabstop=2

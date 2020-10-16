@@ -70,8 +70,8 @@ set_from_resource $ws19 i3-wm.workspace.19.name "19"
 ###############################################################################
 # Workspace Target Monitors
 ###############################################################################
-set $main eDP
-set $second HDMI-A-0 
+set $main HDMI-A-0
+set $second eDP
 workspace "1" output $main
 workspace "2" output $main
 workspace "3" output $main
