@@ -28,6 +28,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'christoomey/vim-tmux-navigator'
 " Repeating plugins commands
 Plugin 'tpope/vim-repeat'
+" Autoformatting
+Plugin 'Chiel92/vim-autoformat'
   
  " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -158,11 +160,14 @@ nnoremap <Right> :vertical resize -2<CR>
 let mapleader = ","
 nnoremap <leader>ne :NERDTreeToggle<CR>
 
-" Open CtrlP with ,f
+" Open CtrlP with ,p
 nnoremap <leader>f :CtrlP<CR>
 
 " Check git-blame with ,s
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+
+" Auto format with ,f
+nnoremap <leader>f :Autoformat<CR>
 
 """OTHER"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufWritePost * GitGutter
