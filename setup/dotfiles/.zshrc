@@ -39,6 +39,8 @@ plugins=(
   git
   python
   vi-mode
+  rust
+  cargo
 )
 source $ZSH/oh-my-zsh.sh
 
