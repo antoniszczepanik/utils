@@ -32,5 +32,8 @@ fi
 
 vim + $TODO_FILE && cd $TODO_DIR && git add -A && git commit -m 'update' > /dev/null
 
+# remove swap files
+find $TODO_DIR -name "*.swp" -type f -delete
+
 # if commit made succesfully push in background
 [ $? -eq 0 ] && git push </dev/null &>/dev/null &
