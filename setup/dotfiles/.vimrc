@@ -1,7 +1,7 @@
 """PLUGINS"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Vundle Requirements
-set nocompatible 
+set nocompatible
 filetype off
 
 " Set the runtime path to include Vundle and initialize
@@ -14,7 +14,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " Add file browsing bar
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-" Pymode 
+" Pymode
 Plugin 'python-mode/python-mode'
 " Blame
 Plugin 'zivyangll/git-blame.vim'
@@ -30,16 +30,16 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-repeat'
 " Autoformatting
 Plugin 'Chiel92/vim-autoformat'
-  
- " All of your Plugins must be added before the following line
+
+" All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required 
+filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 """COLORS""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set dark background
-colorscheme gruvbox 
+colorscheme gruvbox
 set t_Co=256
 set background=dark
 " Less eye-straining colors
@@ -61,8 +61,8 @@ endif
 
 """MAKE LIFE EASIER""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set history=100		           " keep 50 lines of command line history
-set incsearch		             " do incremental searching
+set history=100              " keep 50 lines of command line history
+set incsearch                " do incremental searching
 set ignorecase               " search is case insensitive
 set nu rnu                   " set numbers and relative line numbers
 set clipboard=unnamedplus    " make system clipboard a default
@@ -79,7 +79,7 @@ set showmode
 syntax enable                " enable syntax highlighting
 let python_highlight_all = 1 " enable all Python syntax highlighting features
 set showmatch                " show the matching for [], {} and ()
-set showcmd		               " display what you are writing as a command
+set showcmd                  " display what you are writing as a command
 set colorcolumn=80           " show 80th column
 set hlsearch                 " highlight string matched in search
 
@@ -93,43 +93,22 @@ set updatetime=75
 
 set autoindent " indent when moving to the next line
 
-autocmd Filetype vim setlocal
-  \ expandtab
-  \ tabstop=2
-  \ shiftwidth=2
+autocmd Filetype vim,html,javascript,css,sh,text,sml setlocal
+      \ expandtab
+      \ tabstop=2
+      \ shiftwidth=2
 
-autocmd Filetype html setlocal
-  \ expandtab
-  \ tabstop=2
-  \ shiftwidth=2
-
-autocmd Filetype javascript setlocal
-  \ expandtab
-  \ tabstop=2
-  \ shiftwidth=2
-
-autocmd Filetype css setlocal
-  \ expandtab
-  \ tabstop=2
-  \ shiftwidth=2
-
-autocmd Filetype sh setlocal
-  \ expandtab
-  \ tabstop=2
-  \ shiftwidth=2
-
-autocmd Filetype text setlocal
-  \ expandtab
-  \ tabstop=2
-  \ shiftwidth=2
- 	        
 autocmd Filetype python setlocal
-  \ expandtab
-  \ tabstop=4
-  \ shiftwidth=4
-  \ encoding=utf-8
-  \ foldlevel=99
-  \ foldmethod=indent
+      \ expandtab
+      \ tabstop=4
+      \ shiftwidth=4
+      \ encoding=utf-8
+      \ foldlevel=99
+      \ foldmethod=indent
+
+autocmd Filetype cpp,c,make setlocal
+      \ tabstop=4
+      \ shiftwidth=4
 
 """MAPPINGS""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

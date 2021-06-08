@@ -72,16 +72,20 @@ set_from_resource $ws19 i3-wm.workspace.19.name "19"
 ###############################################################################
 set $main HDMI-A-0
 set $second eDP
-workspace "1" output $main $second
-workspace "2" output $main $second
-workspace "3" output $main $second
-workspace "4" output $main $second
-workspace "5" output $main $second
-workspace "6" output $main $second
-workspace "7" output $second $main
-workspace "8" output $second $main
-workspace "9" output $second $main
-workspace "10" output $second $main
+workspace "1" output $main
+workspace "2" output $main
+workspace "3" output $main
+workspace "4" output $main
+workspace "5" output $main
+workspace "6" output $main
+workspace "7" output $second
+workspace "8" output $second
+workspace "9" output $second
+workspace "10" output $second
+
+# move focused workspace between monitors
+bindsym $mod+ move workspace to output right
+bindsym $mod+Ctrl+less move workspace to output left
 
 ###############################################################################
 # Launcher dialogs
@@ -108,7 +112,6 @@ set_from_resource $i3-wm.program.launcher.window i3-wm.program.launcher.window r
 bindsym $mod+Ctrl+space exec $i3-wm.program.launcher.window
 
 ## Launch // This Dialog // <><Shift> ? ##
-set_from_resource $i3-wm.program.help i3-wm.program.help /usr/bin/remontoire-toggle
 bindsym $mod+Shift+question exec --no-startup-id $i3-wm.program.help
 
 ## Launch // File Search // <><Alt> Space ##
@@ -187,7 +190,6 @@ bindsym $mod+Shift+l move right
 ## Modify // Containing Workspace // <><Ctrl><Shift> ↑ ↓ ← → ##
 bindsym $mod+Ctrl+Shift+Left move workspace to output left
 bindsym $mod+Ctrl+Shift+Down move workspace to output down
-bindsym $mod+Ctrl+Shift+Up move workspace to output up
 bindsym $mod+Ctrl+Shift+Right move workspace to output right
 
 ## Modify // Next Window Orientation // <> Backspace ##

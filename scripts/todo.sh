@@ -8,6 +8,8 @@ if [ "$1" == "priv" ]; then
   TODO_FILE="$TODO_DIR/todo_priv.txt"
 elif [ "$1" == "note" ]; then
   TODO_FILE="$TODO_DIR/note.txt"
+elif [ "$1" == "write" ]; then
+  TODO_FILE="$TODO_DIR/write.txt"
 fi
 
 mkdir -p $TODO_DIR

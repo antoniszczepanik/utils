@@ -15,6 +15,7 @@ export ZSH="/home/antoni/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Vim mode
 # Set vim as default editior
@@ -24,7 +25,6 @@ export EDITOR="$VISUAL"
 # Aliases
 alias c='clear'
 alias e='exit'
-alias ls='ls -1 --color=auto'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
 alias i3rc='vim ~/.config/i3/config'
@@ -34,6 +34,7 @@ alias gitconfig='vim ~/.gitconfig'
 alias todo="~/utils/scripts/todo.sh"
 alias note="~/utils/scripts/todo.sh note"
 alias priv="~/utils/scripts/todo.sh priv"
+alias write="~/utils/scripts/todo.sh write"
 
 plugins=(
   git
@@ -43,5 +44,8 @@ plugins=(
   cargo
 )
 source $ZSH/oh-my-zsh.sh
+
+# Apparently some plugins overwrite this alias
+alias ls='ls -1 --color=auto'
 
 eval "$(starship init zsh)"
