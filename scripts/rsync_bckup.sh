@@ -2,26 +2,27 @@
 
 rsync -avzP \
   --human-readable \
-  --exclude "trash" \
-  --exclude ".local" \
-  --exclude ".cargo" \
-  --exclude ".gradle" \
-  --exclude ".vscode" \
-  --exclude ".rustup" \
-  --exclude ".googleearth" \
+  --exclude ".arduino15" \
   --exclude ".buildroot-ccache" \
   --exclude ".buildroot-dl" \
   --exclude ".cache" \
-  --exclude ".wine" \
-  --exclude ".npm" \
-  --exclude ".steam" \
-  --exclude ".arduino15" \
+  --exclude ".cargo" \
+  --exclude ".config/Microsoft" \
   --exclude ".dropbox-dist" \
-  --exclude "sem2/lines" \
+  --exclude ".gnugpg" \
+  --exclude ".googleearth" \
+  --exclude ".gradle" \
+  --exclude ".local" \
+  --exclude ".npm" \
+  --exclude ".rustup" \
+  --exclude ".ssh" \
+  --exclude ".steam" \
+  --exclude ".vscode" \
+  --exclude ".wine" \
   --exclude "apps" \
   --exclude "downloads" \
-  --exclude ".gnugpg" \
-  --exclude ".ssh" \
+  --exclude "sem2/lines" \
+  --exclude "trash" \
   ~/ antoni@flats.antoniszczepanik.com:/media/hdd/T495
 
   #--exclude ".*" \
