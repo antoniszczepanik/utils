@@ -1,0 +1,39 @@
+# Don't print a new line at the start of the prompt
+add_newline = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold dimmed blue)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+[git_branch]
+format = " [$symbol$branch]($style) "
+style = "bold yellow"
+
+[hostname]
+ssh_only = false
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold dimmed white"
+disabled = true
+[python]
+format = "[$symbol$version]($style) "
+style = "bold green"
+
+[username]
+style_user = "bold dimmed blue"
+show_always = true
+
+[aws]
+disabled = true
+
+[package]
+disabled = true
